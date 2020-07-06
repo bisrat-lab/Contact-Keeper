@@ -1,0 +1,4 @@
+{
+   "mongoURL": "mongodb+srv://bisrat:Window2020@clustercontact.ynopi.mongodb.net/contact?retryWrites=true&w=majority",
+   "jwtSecret": "secret"
+}

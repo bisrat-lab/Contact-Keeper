@@ -47,7 +47,7 @@ const Login = props => {
       <h1>
         Account <span className='text-primary'>Login</span>
       </h1>
-      <form onSubmit={onSubmit}>
+      <form className='card' onSubmit={onSubmit}>
         <div className='form-group'>
           <label htmlFor='email'>Email Address</label>
           <input

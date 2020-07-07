@@ -52,7 +52,7 @@ const Register = props => {
       <h1>
         Account <span className='text-primary'>Register</span>
       </h1>
-      <form onSubmit={onSubmit}>
+      <form className='card' onSubmit={onSubmit}>
         <div className='form-group'>
           <label htmlFor='name'>Name</label>
           <input

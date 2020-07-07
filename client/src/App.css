@@ -8,6 +8,7 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
+  --family-color: rgb(88, 118, 238);
 }
 
 * {
@@ -99,8 +100,13 @@ img {
   border: 5px solid #1C6EA4;
   margin: 0.9rem 0;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.55);
   border: 5px double #1c6ea4;
+}
+.filter{
+  border-radius: 10px;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.55);
+  
 }
 
 /* List */
@@ -277,6 +283,15 @@ img {
   background: var(--success-color);
   color: #fff;
 }
+ 
+.btn-family,
+.bg-family,
+.badge-family,
+.alert-family {
+  background: var(--family-color);
+  color: #fff;
+}
+
 
 .btn-white,
 .bg-white,
@@ -320,13 +335,17 @@ textarea {
   display: block;
   width: 100%;
   padding: 0.4rem;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   border: 1px solid #ccc;
+  border-radius: 10px;
+  border: 0.5px solid #1C6EA4;
+  outline: none;
 }
 
 input[type="submit"],
 button {
   font: inherit;
+  border-radius: 10px;
 }
 
 .form-group {
@@ -365,7 +384,7 @@ table th {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
+  padding: 0.2rem 2rem;
   z-index: 1;
   width: 100%;
   border-bottom: solid 1px var(--primary-color);
@@ -414,7 +433,7 @@ table th {
   border: 5px solid #1C6EA4;
   margin: 0.9rem 0;
   border-radius: 10px;
-  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.55);
   border: 1px double #1c6ea4;
 }
 

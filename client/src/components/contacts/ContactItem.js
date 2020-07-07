@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import ContactContext from "../../context/contact/contactContext";
+import ContactFilter from "./ContactFilter";
 
 const ContactItem = ({ contact }) => {
   const contactContext = useContext(ContactContext);
@@ -11,6 +12,7 @@ const ContactItem = ({ contact }) => {
   const onDelete = () => {
     deleteContact(id);
     clearCurrent();
+    
   };
 
   return (
@@ -20,9 +22,13 @@ const ContactItem = ({ contact }) => {
         <span
           style={{ float: "right" }}
           className={
-            "badge " +
-            (type === "professional" ? "badge-success" : "badge-primary")
+            "badge " + 
+           
+             (type === "family"  ? "badge-family" : "badge-primary" && type === "work"  ? "badge-success" : "badge-primary")
+            
           }
+          
+          // className={`badge ${type=== "family" ? "badge-success" : "badge-primary"}`}
         >
           {type.charAt(0).toUpperCase() + type.slice(1)}
         </span>
@@ -30,12 +36,12 @@ const ContactItem = ({ contact }) => {
       <ul className="list">
         {email && (
           <li>
-            <i className="fas fa-envelope-open"></i> {email}
+            <i className="fas fa-envelope-open"> </i> {email}
           </li>
         )}
         {phone && (
           <li>
-            <i className="fas fa-mobile-alt"></i> {phone}
+            <i className="fas fa-mobile-alt" > {' '}</i> { phone }
           </li>
         )}
       </ul>

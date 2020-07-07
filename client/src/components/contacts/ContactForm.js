@@ -76,19 +76,27 @@ const ContactForm = () => {
       <input
         type="radio"
         name="type"
-        value="personal"
-        checked={type === "personal"}
+        value="family"
+        checked={type === "family"}
         onChange={onChange}
       />{" "}
-      Personal{" "}
+      Family {" "}
       <input
         type="radio"
         name="type"
-        value="professional"
-        checked={type === "professional"}
+        value="work"
+        checked={type === "work"}
         onChange={onChange}
       />{" "}
-      Professional{" "}
+      Work{" "}
+      <input
+        type="radio"
+        name="type"
+        value="friend"
+        checked={type === "friend"}
+        onChange={onChange}
+      />{" "}
+      Friend{" "}
       <div>
         <input
           type="submit"

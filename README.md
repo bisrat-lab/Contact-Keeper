@@ -26,5 +26,6 @@ Project is created with:
 ## Setup
 To run this project, install it locally using npm:
 
-## Copyright © 2020 
+## Copyright
+**© 2020 
 **By Bisrat Tegegne**

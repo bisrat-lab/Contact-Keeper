@@ -9,8 +9,8 @@
 This project is simple Contact Keeper MERN stack web application,
 It consists of MongoDB, ExpressJS, ReactJS, and NodeJS as its working components.
 
-<img src="/client/image/Screen2.png">
-<img src="/client/image/Screen1.png">
+<img src="/contact.png">
+
   
   
 ## Technologies
